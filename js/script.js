@@ -1,6 +1,6 @@
 
 function cambiar() {
-    var x = document.
-    console.log(x)
-    x.remove()
+    var clave = document.getElementById("pass").value
+    clave="123456"
+    console.log(clave)
   }
