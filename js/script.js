@@ -11,7 +11,7 @@ function cambiar(key) {
       document.getElementById('MostrarOcultar').style.display='block';
       document.getElementById('MenuPrincipal').style.display="none";     
      // con++
-
+        break;
     default:
         break;
   }

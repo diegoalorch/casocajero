@@ -56,7 +56,7 @@ body{
 }
 .bflecha{
     margin-left: 8px;
-    margin-top: 20px;
+    margin-top: 5px;
     border-radius: 0.5rem;
     border: none 1;
     border-color: black;
@@ -131,6 +131,7 @@ body{
 }
 .pantalla{
     margin-left: 12px;
+    color: maroon;
 }
 .password{
     width: 280px;
