@@ -21,11 +21,12 @@ function password(numero) {
     if (numero==".") {
         alert("el password solo usa numeros");
     } else {
-        document.getElementById("pass").value = document.getElementById("pass").value+'*';
-        pass=pass+numero;
-        if (pass.length==8) {
-            console.log(pass);
+        if (pass.length<=8) {
+            document.getElementById("pass").value = document.getElementById("pass").value+'*';
+            pass=pass+numero;
+            if (pass.length==8) {
+                console.log(pass);
+            }
         }
-        
     }
 }
