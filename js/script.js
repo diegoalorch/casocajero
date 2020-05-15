@@ -1,4 +1,5 @@
 var con = 0
+var password
 function cambiar(key) {
   switch (key) {
     case 1:
@@ -15,4 +16,11 @@ function cambiar(key) {
         break;
   }
    
+}
+function password(numero) {
+    if (numero==".") {
+        alert("el password solo usa numeros")
+    } else {
+        alert(numero)
+    }
 }
