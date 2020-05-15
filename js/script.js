@@ -1,5 +1,5 @@
 var con = 0
-var password
+var pass=""
 function cambiar(key) {
   switch (key) {
     case 1:
@@ -19,8 +19,13 @@ function cambiar(key) {
 }
 function password(numero) {
     if (numero==".") {
-        alert("el password solo usa numeros")
+        alert("el password solo usa numeros");
     } else {
-        alert(numero)
+        document.getElementById("pass").value = document.getElementById("pass").value+'*';
+        pass=pass+numero;
+        if (pass.length==8) {
+            console.log(pass);
+        }
+        
     }
 }
