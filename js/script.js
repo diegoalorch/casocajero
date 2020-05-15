@@ -1,6 +1,4 @@
-
 function cambiar() {
-    var x = document.
-    console.log(x)
-    x.remove()
-  }
+  document.getElementById('MostrarOcultar').style.display='none';
+  document.getElementById('MenuPrincipal').style.display="block";
+}
