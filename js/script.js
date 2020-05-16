@@ -15,7 +15,6 @@ function cambiar(key) {
     default:
         break;
   }
-   
 }
 function password(numero) {
     if (numero==".") {
