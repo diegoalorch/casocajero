@@ -30,8 +30,8 @@ function cambiar(key) {
   }
 }
 function password(numero) {
-    if (numero==".") {
-        alert("el password solo usa numeros");
+    if (numero=="." || pass.length>=8) {
+        alert("el password solo usa numeros(8)");
     } else {
         if (pass.length<=8) {
             document.getElementById("pass").value = document.getElementById("pass").value+'*';
