@@ -1,11 +1,20 @@
 var con = 0
 var pass=""
+var clave_real= "12345678"
 function cambiar(key) {
   switch (key) {
     case 1:
-      document.getElementById('MostrarOcultar').style.display='none';
-      document.getElementById('MenuPrincipal').style.display="block";
-      //con++
+        if (pass.length==8) {
+            if (pass==clave_real) {
+                document.getElementById('MostrarOcultar').style.display='none';
+                document.getElementById('MenuPrincipal').style.display="block";
+            }else{
+                alert("clave incorrecta")
+            }
+        } else {
+            alert("")
+        }
+      
         break;
     case 2:
       document.getElementById('MostrarOcultar').style.display='block';
