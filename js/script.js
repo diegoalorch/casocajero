@@ -10,11 +10,13 @@ function cambiar(key) {
                 document.getElementById('MenuPrincipal').style.display="block";
             }else{
                 alert("clave incorrecta")
-                document.getElementById("pass").value=''
+                document.getElementById("pass").value=""
+                pass=""
             }
         } else {
             alert("ingrese la clave")
-            document.getElementById("pass").value=''
+            document.getElementById("pass").value=""
+            pass=""
         }
       
         break;
