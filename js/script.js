@@ -34,6 +34,7 @@ function cambiar(opcion) {
       document.getElementById('vistaMenuPrincipal').style.display="none";
       document.getElementById("pass").value=""
       pass=""
+      document.getElementById("BTN_ret").removeEventListener("click", mostrarvista())
      // con++
         break;
     default:
@@ -70,16 +71,30 @@ function password(numero) {
     }
 }
 function nextVista() {
-    document.getElementById("btn_ret").addEventListener("click", ()=> {
-        mostrarvista("hola")
+    document.getElementById("BTN_ret").addEventListener("click", ()=> {
+        mostrarvista("BTN_ret")
     });
-    /*document.getElementById("BTN_con").addEventListener("click", mostrarvista("BTM_con"));
-    document.getElementById("BTN_ope").addEventListener("click", mostrarvista("BTM_ope"));
-    document.getElementById("BTN_blanco1").addEventListener("click", mostrarvista("BTM_blanco1"));
-    document.getElementById("BTN_tra").addEventListener("click", mostrarvista("BTM_tra"));
-    document.getElementById("BTN_blanco2").addEventListener("click", mostrarvista("BTM_blanco2"));
-    document.getElementById("BTM_ult").addEventListener("click", mostrarvista("BTM_ult"));
-    document.getElementById("BTM_blanco3").addEventListener("click", mostrarvista("BTM_blanco3"));*/
+    document.getElementById("BTN_con").addEventListener("click", ()=> {
+        mostrarvista("BTN_con")
+    });
+    document.getElementById("BTN_ope").addEventListener("click", ()=>{
+        mostrarvista("BTN_ope")
+    });
+    document.getElementById("BTN_blanco1").addEventListener("click", ()=> {
+        mostrarvista("BTN_blanco1")
+    });
+    document.getElementById("BTN_tra").addEventListener("click", ()=> {
+        mostrarvista("BTN_tra")
+    });
+    document.getElementById("BTN_blanco2").addEventListener("click", ()=> {
+        mostrarvista("BTN_blanco2")
+    });
+    document.getElementById("BTN_ult").addEventListener("click", ()=> {
+        mostrarvista("BTN_ult")
+    });
+    document.getElementById("BTN_blanco3").addEventListener("click", ()=> {
+        mostrarvista("BTN_blanco3")
+    });
 }
 function mostrarvista(opcion){
     alert(opcion)
