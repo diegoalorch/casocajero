@@ -11,6 +11,7 @@ function cambiar(opcion) {
                 document.getElementById('MostrarOcultar').style.display='none';
                 document.getElementById('vistaMenuPrincipal').style.display="block";
                 siguiente = true
+                nextVista()
             }else{
                 alert("clave incorrecta")
                 document.getElementById("pass").value=""
@@ -49,7 +50,7 @@ function cambiar(opcion) {
         break;
     case 4:
         if (siguiente) {
-            nextVista()
+            
         }else{
             alert("Los botones aun no esta desbloqueados")
         }
@@ -69,14 +70,14 @@ function password(numero) {
     }
 }
 function nextVista() {
-    document.getElementById("BTN_ret").addEventListener("click", mostrarvista("BTM_ret"))
-    document.getElementById("BTN_con").addEventListener("click", mostrarvista("BTM_con"))
-    document.getElementById("BTN_ope").addEventListener("click", mostrarvista("BTM_ope"))
-    document.getElementById("BTN_blanco1").addEventListener("click", mostrarvista("BTM_blanco1"))
-    document.getElementById("BTN_tra").addEventListener("click", mostrarvista("BTM_tra"))
-    document.getElementById("BTN_blanco2").addEventListener("click", mostrarvista("BTM_blanco2"))
-    document.getElementById("BTM_ult").addEventListener("click", mostrarvista("BTM_ult"))
-    document.getElementById("BTM_blanco3").addEventListener("click", mostrarvista("BTM_blanco3"))
+    document.getElementById("BTN_ret").addEventListener("click", mostrarvista("BTM_ret"));
+    /*document.getElementById("BTN_con").addEventListener("click", mostrarvista("BTM_con"));
+    document.getElementById("BTN_ope").addEventListener("click", mostrarvista("BTM_ope"));
+    document.getElementById("BTN_blanco1").addEventListener("click", mostrarvista("BTM_blanco1"));
+    document.getElementById("BTN_tra").addEventListener("click", mostrarvista("BTM_tra"));
+    document.getElementById("BTN_blanco2").addEventListener("click", mostrarvista("BTM_blanco2"));
+    document.getElementById("BTM_ult").addEventListener("click", mostrarvista("BTM_ult"));
+    document.getElementById("BTM_blanco3").addEventListener("click", mostrarvista("BTM_blanco3"));*/
 }
 function mostrarvista(opcion){
     alert(opcion)
