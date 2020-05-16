@@ -7,7 +7,7 @@ function cambiar(key) {
         if (pass.length==8) {
             if (pass==clave_real) {
                 document.getElementById('MostrarOcultar').style.display='none';
-                document.getElementById('MenuPrincipal').style.display="block";
+                document.getElementById('vistaMenuPrincipal').style.display="block";
             }else{
                 alert("clave incorrecta")
                 document.getElementById("pass").value=""
@@ -22,7 +22,7 @@ function cambiar(key) {
         break;
     case 2:
       document.getElementById('MostrarOcultar').style.display='block';
-      document.getElementById('MenuPrincipal').style.display="none";     
+      document.getElementById('vistaMenuPrincipal').style.display="none";     
      // con++
         break;
     default:
