@@ -30,11 +30,14 @@ function cambiar(opcion) {
         }
         break;
     case 2:
-        document.getElementById('MostrarOcultar').style.display='block';
-        document.getElementById('vistaMenuPrincipal').style.display="none";
-        document.getElementById("pass").value=""
-        pass=""
-      
+      document.getElementById('MostrarOcultar').style.display='block';
+      document.getElementById('vistaMenuPrincipal').style.display="none";
+      document.getElementById("pass").value=""
+      pass=""
+      borrareventos()
+      /*document.getElementById("BTN_ret").removeEventListener("click", ()=> {
+        mostrarvista("BTN_ret")
+    });*/
      // con++
         break;
     default:
@@ -71,10 +74,64 @@ function password(numero) {
     }
 }
 function nextVista() {
-    document.getElementById("BTN_ret").addEventListener("click", ()=> {
-        mostrarvista("BTN_ret")
-    });
+    //ejemplo
+    document.getElementById("BTN_ret").addEventListener("click", BTN_ret)
+    
+    document.getElementById("BTN_con").addEventListener("click", BTN_con)
+    //ahora has todo esto :3
+    document.getElementById("BTN_ope").addEventListener("click", BTN_ope)
+
+    document.getElementById("BTN_blanco1").addEventListener("click", BTN_blanco1)
+
+    document.getElementById("BTN_tra").addEventListener("click", BTN_tra)
+
+    document.getElementById("BTN_blanco2").addEventListener("click", BTN_blanco2)
+
+    document.getElementById("BTN_ult").addEventListener("click", BTN_ult)
+
+    document.getElementById("BTN_blanco3").addEventListener("click", BTN_blanco3)
 }
-function mostrarvista(opcion){
-    alert(opcion)
+//ejemplo de funcion ke debes de crear
+function BTN_ret() {
+    alert("BTN_ret")
+}
+function BTN_con() {
+    alert("BTN_ret")
+}
+function BTN_ope() {
+    alert("BTN_ope")
+}
+function BTN_blanco1() {
+    alert("BTN_blanco1")
+}
+function BTN_tra() {
+    alert("BTN_tra")
+}
+function BTN_blanco2() {
+    alert("BTN_blanco2")
+}
+function BTN_ult() {
+    alert("BTN_ult")
+}
+function BTN_blanco3() {
+    alert("BTN_ope")
+}
+
+function borrareventos() {
+    //aca pones todos los eventos a borrar
+    document.getElementById("BTN_ret").removeEventListener("click", BTN_ret)
+    //otro ejemplo
+    document.getElementById("BTN_con").removeEventListener("click", BTN_con)
+    //copia esto pa ke te guies document.getElementById(el ID).removeEventListener("click", tu clase)
+    document.getElementById("BTN_con").removeEventListener("click", BTN_ope)
+
+    document.getElementById("BTN_con").removeEventListener("click", BTN_blanco1)
+
+    document.getElementById("BTN_con").removeEventListener("click", BTN_tra)
+
+    document.getElementById("BTN_con").removeEventListener("click", BTN_blanco2)
+
+    document.getElementById("BTN_con").removeEventListener("click", BTN_ult)
+
+    document.getElementById("BTN_con").removeEventListener("click", BTN_blanco3)
 }
