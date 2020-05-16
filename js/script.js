@@ -70,7 +70,9 @@ function password(numero) {
     }
 }
 function nextVista() {
-    document.getElementById("BTN_ret").addEventListener("click", mostrarvista("BTM_ret"));
+    document.getElementById("btn_ret").addEventListener("click", ()=> {
+        mostrarvista("hola")
+    });
     /*document.getElementById("BTN_con").addEventListener("click", mostrarvista("BTM_con"));
     document.getElementById("BTN_ope").addEventListener("click", mostrarvista("BTM_ope"));
     document.getElementById("BTN_blanco1").addEventListener("click", mostrarvista("BTM_blanco1"));
