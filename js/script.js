@@ -26,6 +26,8 @@ function cambiar(key) {
      // con++
         break;
     default:
+        alert(key)
+        console.log(key)
         break;
   }
 }
