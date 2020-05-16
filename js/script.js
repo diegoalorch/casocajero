@@ -34,7 +34,10 @@ function cambiar(opcion) {
       document.getElementById('vistaMenuPrincipal').style.display="none";
       document.getElementById("pass").value=""
       pass=""
-      document.getElementById("BTN_ret").removeEventListener("click", mostrarvista())
+      borrareventos()
+      /*document.getElementById("BTN_ret").removeEventListener("click", ()=> {
+        mostrarvista("BTN_ret")
+    });*/
      // con++
         break;
     default:
@@ -71,12 +74,11 @@ function password(numero) {
     }
 }
 function nextVista() {
-    document.getElementById("BTN_ret").addEventListener("click", ()=> {
-        mostrarvista("BTN_ret")
-    });
-    document.getElementById("BTN_con").addEventListener("click", ()=> {
-        mostrarvista("BTN_con")
-    });
+    //ejemplo
+    document.getElementById("BTN_ret").addEventListener("click", BTN_ret)
+    
+    document.getElementById("BTN_con").addEventListener("click", BTN_con)
+    //ahora has todo esto :3
     document.getElementById("BTN_ope").addEventListener("click", ()=>{
         mostrarvista("BTN_ope")
     });
@@ -96,6 +98,18 @@ function nextVista() {
         mostrarvista("BTN_blanco3")
     });
 }
-function mostrarvista(opcion){
-    alert(opcion)
+//ejemplo de funcion ke debes de crear
+function BTN_ret() {
+    alert("BTN_ret")
+}
+function BTN_con() {
+    alert("BTN_ret")
+}
+
+function borrareventos() {
+    //aca pones todos los eventos a borrar
+    document.getElementById("BTN_ret").removeEventListener("click", BTN_ret)
+    //otro ejemplo
+    document.getElementById("BTN_con").removeEventListener("click", BTN_con)
+    //copia esto pa ke te guies document.getElementById(el ID).removeEventListener("click", tu clase)
 }

@@ -1,0 +1,17 @@
+
+<button onclick="removeHandler()">elimina</button>
+<p id="demo"></p>
+<button id="genera">genera</button>
+<button onclick="ponerHandler()">recontragenera</button>
+<script>
+    function myFunction() {
+        alert(Math.random());
+    }
+    function removeHandler() {
+        document.getElementById("genera").removeEventListener("click", myFunction);
+
+    }
+    function ponerHandler(){
+        document.getElementById("genera").addEventListener("click", myFunction);
+    }
+</script>
