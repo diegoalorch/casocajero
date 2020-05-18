@@ -123,15 +123,15 @@ function borrareventos() {
     //otro ejemplo
     document.getElementById("BTN_con").removeEventListener("click", BTN_con)
     //copia esto pa ke te guies document.getElementById(el ID).removeEventListener("click", tu clase)
-    document.getElementById("BTN_con").removeEventListener("click", BTN_ope)
+    document.getElementById("BTN_ope").removeEventListener("click", BTN_ope)
 
-    document.getElementById("BTN_con").removeEventListener("click", BTN_blanco1)
+    document.getElementById("BTN_blanco1").removeEventListener("click", BTN_blanco1)
 
-    document.getElementById("BTN_con").removeEventListener("click", BTN_tra)
+    document.getElementById("BTN_tra").removeEventListener("click", BTN_tra)
 
-    document.getElementById("BTN_con").removeEventListener("click", BTN_blanco2)
+    document.getElementById("BTN_blanco2").removeEventListener("click", BTN_blanco2)
 
-    document.getElementById("BTN_con").removeEventListener("click", BTN_ult)
+    document.getElementById("BTN_ult").removeEventListener("click", BTN_ult)
 
-    document.getElementById("BTN_con").removeEventListener("click", BTN_blanco3)
+    document.getElementById("BTN_blanco3").removeEventListener("click", BTN_blanco3)
 }
