@@ -61,7 +61,17 @@ body{
     border-color: black;
     width: 45px;
     height: 30px;
-    background-image: url("../imagenes/botonescopia.jpg");
+    background-image: url("../imagenes/1.png");
+}
+.bflecha2{
+    margin-left: 8px;
+    margin-top: 5px;
+    border-radius: 0.5rem;
+    border: none 1;
+    border-color: black;
+    width: 45px;
+    height: 30px;
+    background-image: url("../imagenes/2.png");
 }
 .card{
     width: 130px;
