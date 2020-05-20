@@ -5,6 +5,8 @@ var retiro=false
 var retiro_soles=false
 var retiro_dolares=false
 var monto = 0
+var otro_monto = false
+var confirmar=false
 // Display = 'none'(sirve para que no se vea) 
 // Display = "block"(sirve para que se vea) 
 function cambiar(opcion) {
@@ -106,6 +108,7 @@ function ocultarvistas() {
     document.getElementById("MenuPrincipal").style.display='block'
     document.getElementById("RetiroPlata").style.display='none'
     document.getElementById("retiromonto").style.display='none'
+    document.getElementById("retiroprocesado").style.display='none'
 }
 //ejemplo de funcion ke debes de crear
 function BTN_ret() {
@@ -163,6 +166,10 @@ function BTN_blanco2() {
     }else if (retiro_soles) {
         monto = 200
         alert(monto)
+    }else if (otro_monto) {
+        document.getElementById("retiroprocesado").style.display='block'
+        document.getElementById("retiromonto").style.display='none'
+        otro_monto = false
     }
 }
 function BTN_ult() {
@@ -171,12 +178,14 @@ function BTN_ult() {
     }else if (retiro_soles) {
         document.getElementById("retiromonto").style.display='block'
         document.getElementById("RetiroPlata").style.display='none'
+        otro_monto = true
     }
+    retiro_soles=false
 }
 function BTN_blanco3() {
     if (siguiente) {
     }else if (retiro) {
-    }else if (retiro_soles) {
+    }else if (retiro_soles || otro_monto) {
         document.getElementById('MostrarOcultar').style.display='block';
         document.getElementById('vistaMenuPrincipal').style.display="none";
         document.getElementById("pass").value=""
