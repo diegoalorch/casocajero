@@ -103,6 +103,7 @@ function nextVista() {
 function ocultarvistas() {
     document.getElementById("Retiro").style.display='none'
     document.getElementById("MenuPrincipal").style.display='block'
+    document.getElementById("RetiroPlata").style.display='none'
 }
 //ejemplo de funcion ke debes de crear
 function BTN_ret() {
