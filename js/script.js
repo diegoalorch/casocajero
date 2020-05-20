@@ -58,9 +58,9 @@ function cambiar(opcion) {
         if (siguiente) {
             
         }else{
-            alert("Los botones aun no esta desbloqueados")
+            alert("Los botones aun no estan desbloqueados")
         }
-  }
+    }
 }
 function password(numero) {
     if (numero=="." || pass.length>=8) {
