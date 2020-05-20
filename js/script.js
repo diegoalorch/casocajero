@@ -117,9 +117,9 @@ function BTN_ret() {
         retiro_soles=true
         document.getElementById("RetiroPlata").style.display='block'
         document.getElementById("Retiro").style.display='none'
-    }else if (retirosoles) {
+    }else if (retiro_soles) {
         monto=20
-        alert(retiro_soles)
+        alert(monto)
     }
 }
 // asi con todas las webadas man
