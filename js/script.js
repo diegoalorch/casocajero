@@ -1,7 +1,8 @@
 var pass=""
 var clave_real= "12345678"
 var siguiente = false
-var menu_principal=false
+var retiro=false
+var monto = 0
 // Display = 'none'(sirve para que no se vea) 
 // Display = "block"(sirve para que se vea) 
 function cambiar(opcion) {
@@ -12,7 +13,6 @@ function cambiar(opcion) {
                 document.getElementById('MostrarOcultar').style.display='none';
                 document.getElementById('vistaMenuPrincipal').style.display="block";
                 siguiente = true
-
                 nextVista()
             }else{
                 alert("clave incorrecta")
@@ -96,7 +96,12 @@ function nextVista() {
 //ejemplo de funcion ke debes de crear
 function BTN_ret() {
     if (siguiente) {
-        alert("BTN_ret")
+        document.getElementById("Retiro").style.display='block'
+        document.getElementById("MenuPrincipal").style.display='none'
+        if (retiro) {
+            monto=100
+        }
+        retiro = true;
     }
 }
 function BTN_con() {
