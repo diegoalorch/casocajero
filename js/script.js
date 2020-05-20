@@ -2,6 +2,8 @@ var pass=""
 var clave_real= "12345678"
 var siguiente = false
 var retiro=false
+var retiro_soles=false
+var retiro_dolares=false
 var monto = 0
 // Display = 'none'(sirve para que no se vea) 
 // Display = "block"(sirve para que se vea) 
@@ -107,49 +109,79 @@ function BTN_ret() {
     if (siguiente) {
         document.getElementById("Retiro").style.display='block'
         document.getElementById("MenuPrincipal").style.display='none'
-        if (retiro) {
-            monto=100
-        }
+        siguiente=false
         retiro = true;
     }
+    else if (retiro) {
+        retiro_soles=true
+    }
+        
 }
 // asi con todas las webadas man
 function BTN_con() {
     if (siguiente) {
-        alert("BTN_con")
-    }
-    else if (retiro) {
-        alert("el monto ke corresponde")
+        if (retiro) {
+            if (retiro_soles) {
+                alert("el monto ke corresponde")
+            }
+        }
     }
 }
 function BTN_ope() {
     if (siguiente) {
-        alert("BTN_ope")
+        if (retiro) {
+            if (retiro_soles) {
+                alert("el monto ke corresponde")
+            }
+
+        }
     }
 }
 function BTN_blanco1() {
     if (siguiente) {
-        alert("BTN_blanco1")
+        if (retiro) {
+            if (retiro_soles) {
+                alert("el monto ke corresponde")
+            }
+        }
     }
 }
 function BTN_tra() {
     if (siguiente) {
-        alert("BTN_tra")
+        document.getElementById("Transferencia").style.display='block'
+        document.getElementById("MenuPrincipal").style.display='none'
+        siguiente=false
+    }
+    else if (retiro) {
+        retiro_dolares=true
+        retiro=false
     }
 }
 function BTN_blanco2() {
     if (siguiente) {
-        alert("BTN_blanco2")
+        if (retiro) {
+            if (retiro_soles) {
+                alert("el monto ke corresponde")
+            }
+        }
     }
 }
 function BTN_ult() {
     if (siguiente) {
-        alert("BTN_ult")
+        if (retiro) {
+            if (retiro_soles) {
+                alert("el monto ke corresponde")
+            }
+        }
     }
 }
 function BTN_blanco3() {
     if (siguiente) {
-        alert("BTN_ope")
+        if (retiro) {
+            if (retiro_soles) {
+                alert("el monto ke corresponde")
+            }
+        }
     }
 }
 
