@@ -7,6 +7,7 @@ var retiro_dolares=false
 var monto = 0
 var otro_monto = false
 var confirmar=false
+var no = false
 // Display = 'none'(sirve para que no se vea) 
 // Display = "block"(sirve para que se vea) 
 function cambiar(opcion) {
@@ -109,6 +110,7 @@ function ocultarvistas() {
     document.getElementById("RetiroPlata").style.display='none'
     document.getElementById("retiromonto").style.display='none'
     document.getElementById("retiroprocesado").style.display='none'
+    document.getElementById("finish").style.display='none';
 }
 //ejemplo de funcion ke debes de crear
 function BTN_ret() {
@@ -194,6 +196,10 @@ function BTN_blanco3() {
         retiro_soles=false
         borrareventos()
         ocultarvistas()
+    }else if (confirmar) {
+        document.getElementById("finish").style.display='block';
+        document.getElementById("retiromonto").style.display="none";
+        confirmar=false
     }
 }
 
