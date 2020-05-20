@@ -126,14 +126,16 @@ function BTN_ret() {
 function BTN_con() {
     if (siguiente) {
     }else if (retiro) {
-    }else if (retirosoles) {
+    }else if (retiro_soles) {
+        monto = 150
         alert(monto)
     }
 }
 function BTN_ope() {
     if (siguiente) {
     }else if (retiro) {
-    }else if (retirosoles) {
+    }else if (retiro_soles) {
+        monto = 300
         alert(monto)
     }
 }
@@ -151,17 +153,19 @@ function BTN_tra() {
         document.getElementById("Transferencia").style.display='block'
         document.getElementById("MenuPrincipal").style.display='none'
         siguiente=false
-    }
-    else if (retiro) {
-        retiro_dolares=true
-        retiro=false
+    }if (retiro) {
+        if (retiro_soles) {
+            monto = 100
+            alert(monto)
+        }
     }
 }
 function BTN_blanco2() {
     if (siguiente) {
         if (retiro) {
             if (retiro_soles) {
-                alert("el monto ke corresponde")
+                monto = 200
+                alert(monto)
             }
         }
     }
@@ -169,18 +173,12 @@ function BTN_blanco2() {
 function BTN_ult() {
     if (siguiente) {
         if (retiro) {
-            if (retiro_soles) {
-                alert("el monto ke corresponde")
-            }
         }
     }
 }
 function BTN_blanco3() {
     if (siguiente) {
         if (retiro) {
-            if (retiro_soles) {
-                alert("el monto ke corresponde")
-            }
         }
     }
 }
