@@ -104,9 +104,13 @@ function BTN_ret() {
         retiro = true;
     }
 }
+// asi con todas las webadas man
 function BTN_con() {
     if (siguiente) {
         alert("BTN_con")
+    }
+    else if (retiro) {
+        alert("el monto ke corresponde")
     }
 }
 function BTN_ope() {
