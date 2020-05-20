@@ -5,7 +5,6 @@ var retiro=false
 var retiro_soles=false
 var retiro_dolares=false
 var monto = 0
-var montoD = 0
 // Display = 'none'(sirve para que no se vea) 
 // Display = "block"(sirve para que se vea) 
 function cambiar(opcion) {
@@ -112,11 +111,14 @@ function BTN_ret() {
         document.getElementById("MenuPrincipal").style.display='none'
         siguiente=false
         retiro = true;
-    }
-    else if (retiro) {
+    }else if (retiro) {
+        retiro=false
         retiro_soles=true
+        document.getElementById("RetiroPlata").style.display='block'
+        document.getElementById("Retiro").style.display='none'
+    }else if (retirosoles) {
+        alert(monto)
     }
-        
 }
 // asi con todas las webadas man
 function BTN_con() {
