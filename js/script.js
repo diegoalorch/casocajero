@@ -141,33 +141,26 @@ function BTN_ope() {
 }
 function BTN_blanco1() {
     if (siguiente) {
-        if (retiro) {
-            if (retiro_soles) {
-                alert("el monto ke corresponde")
-            }
-        }
+    }else if (retiro) {
+    }else if (retiro_soles) {
+        monto = 0
+        alert(monto)
     }
 }
 function BTN_tra() {
     if (siguiente) {
-        document.getElementById("Transferencia").style.display='block'
-        document.getElementById("MenuPrincipal").style.display='none'
-        siguiente=false
-    }if (retiro) {
-        if (retiro_soles) {
-            monto = 100
-            alert(monto)
-        }
+    }else if (retiro) {
+    }else if (retiro_soles) {
+        monto = 10
+        alert(monto)
     }
 }
 function BTN_blanco2() {
     if (siguiente) {
-        if (retiro) {
-            if (retiro_soles) {
-                monto = 200
-                alert(monto)
-            }
-        }
+    }else if (retiro) {
+    }else if (retiro_soles) {
+        monto = 200
+        alert(monto)
     }
 }
 function BTN_ult() {
