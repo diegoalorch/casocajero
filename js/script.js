@@ -3,6 +3,7 @@ var clave_real= "12345678"
 var siguiente = false
 var retiro=false
 var monto = 0
+var montoD = 0
 // Display = 'none'(sirve para que no se vea) 
 // Display = "block"(sirve para que se vea) 
 function cambiar(opcion) {
