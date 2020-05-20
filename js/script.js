@@ -41,6 +41,7 @@ function cambiar(opcion) {
       document.getElementById("pass").value=""
       pass=""
       retiro=false
+      retiro_soles=false
       borrareventos()
       ocultarvistas()
       
@@ -180,6 +181,7 @@ function BTN_blanco3() {
         document.getElementById("pass").value=""
         pass=""
         retiro=false
+        retiro_soles=false
         borrareventos()
         ocultarvistas()
     }
