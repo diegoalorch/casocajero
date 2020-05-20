@@ -13,6 +13,8 @@ function cambiar(opcion) {
                 document.getElementById('MostrarOcultar').style.display='none';
                 document.getElementById('vistaMenuPrincipal').style.display="block";
                 siguiente = true
+                document.getElementById("pass").value=""
+                pass=""
                 nextVista()
             }else{
                 alert("clave incorrecta")
@@ -36,7 +38,10 @@ function cambiar(opcion) {
       document.getElementById('vistaMenuPrincipal').style.display="none";
       document.getElementById("pass").value=""
       pass=""
+      retiro=false
       borrareventos()
+      ocultarvistas()
+      
       /*document.getElementById("BTN_ret").removeEventListener("click", ()=> {
         mostrarvista("BTN_ret")
     });*/
@@ -92,6 +97,10 @@ function nextVista() {
     document.getElementById("BTN_ult").addEventListener("click", BTN_ult)
 
     document.getElementById("BTN_blanco3").addEventListener("click", BTN_blanco3)
+}
+function ocultarvistas() {
+    document.getElementById("Retiro").style.display='none'
+    document.getElementById("MenuPrincipal").style.display='block'
 }
 //ejemplo de funcion ke debes de crear
 function BTN_ret() {
