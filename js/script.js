@@ -1,6 +1,7 @@
 var pass=""
 var clave_real= "12345678"
 var siguiente = false
+var menu_principal=false
 // Display = 'none'(sirve para que no se vea) 
 // Display = "block"(sirve para que se vea) 
 function cambiar(opcion) {
@@ -11,6 +12,7 @@ function cambiar(opcion) {
                 document.getElementById('MostrarOcultar').style.display='none';
                 document.getElementById('vistaMenuPrincipal').style.display="block";
                 siguiente = true
+
                 nextVista()
             }else{
                 alert("clave incorrecta")
@@ -93,28 +95,44 @@ function nextVista() {
 }
 //ejemplo de funcion ke debes de crear
 function BTN_ret() {
-    alert("BTN_ret")
+    if (siguiente) {
+        alert("BTN_ret")
+    }
 }
 function BTN_con() {
-    alert("BTN_ret")
+    if (siguiente) {
+        alert("BTN_con")
+    }
 }
 function BTN_ope() {
-    alert("BTN_ope")
+    if (siguiente) {
+        alert("BTN_ope")
+    }
 }
 function BTN_blanco1() {
-    alert("BTN_blanco1")
+    if (siguiente) {
+        alert("BTN_blanco1")
+    }
 }
 function BTN_tra() {
-    alert("BTN_tra")
+    if (siguiente) {
+        alert("BTN_tra")
+    }
 }
 function BTN_blanco2() {
-    alert("BTN_blanco2")
+    if (siguiente) {
+        alert("BTN_blanco2")
+    }
 }
 function BTN_ult() {
-    alert("BTN_ult")
+    if (siguiente) {
+        alert("BTN_ult")
+    }
 }
 function BTN_blanco3() {
-    alert("BTN_ope")
+    if (siguiente) {
+        alert("BTN_ope")
+    }
 }
 
 function borrareventos() {
