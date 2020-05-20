@@ -104,6 +104,7 @@ function ocultarvistas() {
     document.getElementById("Retiro").style.display='none'
     document.getElementById("MenuPrincipal").style.display='block'
     document.getElementById("RetiroPlata").style.display='none'
+    document.getElementById("retiromonto").style.display='none'
 }
 //ejemplo de funcion ke debes de crear
 function BTN_ret() {
@@ -167,8 +168,8 @@ function BTN_ult() {
     if (siguiente) {
     }else if (retiro) {
     }else if (retiro_soles) {
-        monto = 300
-        alert(monto)
+        document.getElementById("retiromonto").style.display='block'
+        document.getElementById("RetiroPlata").style.display='none'
     }
 }
 function BTN_blanco3() {
