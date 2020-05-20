@@ -165,14 +165,23 @@ function BTN_blanco2() {
 }
 function BTN_ult() {
     if (siguiente) {
-        if (retiro) {
-        }
+    }else if (retiro) {
+    }else if (retiro_soles) {
+        monto = 300
+        alert(monto)
     }
 }
 function BTN_blanco3() {
     if (siguiente) {
-        if (retiro) {
-        }
+    }else if (retiro) {
+    }else if (retiro_soles) {
+        document.getElementById('MostrarOcultar').style.display='block';
+        document.getElementById('vistaMenuPrincipal').style.display="none";
+        document.getElementById("pass").value=""
+        pass=""
+        retiro=false
+        borrareventos()
+        ocultarvistas()
     }
 }
 
