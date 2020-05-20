@@ -125,21 +125,16 @@ function BTN_ret() {
 // asi con todas las webadas man
 function BTN_con() {
     if (siguiente) {
-        if (retiro) {
-            if (retiro_soles) {
-                alert("el monto ke corresponde")
-            }
-        }
+    }else if (retiro) {
+    }else if (retirosoles) {
+        alert(monto)
     }
 }
 function BTN_ope() {
     if (siguiente) {
-        if (retiro) {
-            if (retiro_soles) {
-                alert("el monto ke corresponde")
-            }
-
-        }
+    }else if (retiro) {
+    }else if (retirosoles) {
+        alert(monto)
     }
 }
 function BTN_blanco1() {
