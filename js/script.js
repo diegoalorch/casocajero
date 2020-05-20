@@ -172,6 +172,7 @@ function BTN_blanco2() {
         document.getElementById("retiroprocesado").style.display='block'
         document.getElementById("retiromonto").style.display='none'
         otro_monto = false
+        confirmar=true
     }
 }
 function BTN_ult() {
@@ -198,7 +199,7 @@ function BTN_blanco3() {
         ocultarvistas()
     }else if (confirmar) {
         document.getElementById("finish").style.display='block';
-        document.getElementById("retiromonto").style.display="none";
+        document.getElementById("retiroprocesado").style.display="none";
         confirmar=false
     }
 }
