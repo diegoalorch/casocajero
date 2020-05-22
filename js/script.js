@@ -8,6 +8,7 @@ var monto = 0
 var otro_monto = false
 var confirmar=false
 var no = false
+var si = false
 // Display = 'none'(sirve para que no se vea) 
 // Display = "block"(sirve para que se vea) 
 function cambiar(opcion) {
@@ -126,7 +127,10 @@ function BTN_ret() {
         document.getElementById("Retiro").style.display='none'
     }else if (retiro_soles) {
         monto=20
-        alert(monto)
+        document.getElementById("retiromonto").style.display='block'
+        document.getElementById("RetiroPlata").style.display='none'
+        retiro_soles=false
+        document.getElementById("montoboton").value="s/"+20
     }
 }
 // asi con todas las webadas man
@@ -135,7 +139,10 @@ function BTN_con() {
     }else if (retiro) {
     }else if (retiro_soles) {
         monto = 150
-        alert(monto)
+        document.getElementById("retiromonto").style.display='block'
+        document.getElementById("RetiroPlata").style.display='none'
+        document.getElementById("montoboton").value="s/"+150
+        retiro_soles=false
     }
 }
 function BTN_ope() {
@@ -143,7 +150,10 @@ function BTN_ope() {
     }else if (retiro) {
     }else if (retiro_soles) {
         monto = 300
-        alert(monto)
+        document.getElementById("retiromonto").style.display='block'
+        document.getElementById("RetiroPlata").style.display='none'
+        document.getElementById("montoboton").value="s/"+300
+        retiro_soles=false
     }
 }
 function BTN_blanco1() {
@@ -158,8 +168,11 @@ function BTN_tra() {
     if (siguiente) {
     }else if (retiro) {
     }else if (retiro_soles) {
-        monto = 10
-        alert(monto)
+        monto = 100
+        document.getElementById("retiromonto").style.display='block'
+        document.getElementById("RetiroPlata").style.display='none'
+        document.getElementById("montoboton").value="s/"+100
+        retiro_soles=false
     }
 }
 function BTN_blanco2() {
@@ -167,7 +180,10 @@ function BTN_blanco2() {
     }else if (retiro) {
     }else if (retiro_soles) {
         monto = 200
-        alert(monto)
+        document.getElementById("retiromonto").style.display='block'
+        document.getElementById("RetiroPlata").style.display='none'
+        document.getElementById("montoboton").value="s/"+200
+        retiro_soles=false
     }else if (otro_monto) {
         document.getElementById("retiroprocesado").style.display='block'
         document.getElementById("retiromonto").style.display='none'
@@ -182,15 +198,20 @@ function BTN_ult() {
         document.getElementById("retiromonto").style.display='block'
         document.getElementById("RetiroPlata").style.display='none'
         otro_monto = true
+        retiro_soles=false
+        si = true
+    }else if (si) {
+        document.getElementById("MenuPrincipal").style.display='block';
+        document.getElementById("retiroprocesado").style.display='none';
+        si = false
     }
-    retiro_soles=false
 }
 function BTN_blanco3() {
     if (siguiente) {
     }else if (retiro) {
     }else if (retiro_soles || otro_monto) {
         document.getElementById('MostrarOcultar').style.display='block';
-        document.getElementById('vistaMenuPrincipal').style.display="none";
+        document.getElementById('vistaMenuPrincipal').style.display='none';
         document.getElementById("pass").value=""
         pass=""
         retiro=false
@@ -199,7 +220,7 @@ function BTN_blanco3() {
         ocultarvistas()
     }else if (confirmar) {
         document.getElementById("finish").style.display='block';
-        document.getElementById("retiroprocesado").style.display="none";
+        document.getElementById("retiroprocesado").style.display='none';
         confirmar=false
     }
 }
