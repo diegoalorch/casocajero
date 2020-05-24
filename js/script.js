@@ -29,7 +29,7 @@ function cambiar(opcion) {
             }
         } else {
             if (pass.length < 8 && pass.length!=0) {
-                alert("Clave Incompleta")
+                alert('Clave Incompleta')
                 document.getElementById("pass").value=""
                 pass=""
             }else{
